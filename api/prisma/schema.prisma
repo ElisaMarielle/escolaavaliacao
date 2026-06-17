@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Turma {
+  id        Int    @id @default(autoincrement())
+  nome      String
+  descricao String
+
+  aulas       Aula[]
+  professores Professor[]
+}
+
+model Professor {
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String
+  senha String
+
+  turmas Turma[]
+}
+
+model Aula {
+  id       Int    @id @default(autoincrement())
+  titulo   String
+  conteudo String @default("")
+  turmaId  Int
+  turma    Turma  @relation(fields: [turmaId], references: [id], onDelete: Cascade)
+}

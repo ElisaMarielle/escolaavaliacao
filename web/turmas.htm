@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="left"><h1>Escola SENAI</h1></div>
+        <div class="right">
+            <a href="index.htm">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="head">
+                <div class="left">
+                    <h2>Turmas</h2>
+                </div>
+                <div class="right">
+                    <button onclick="abrirModal()"><i class="fa-solid fa-plus"></i>Nova Turma</button>
+                </div>
+            </div>
+            <div class="table-turmas">
+                <table>
+                    <!-----------HEAD------------->
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Nome</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <!-----------BODY------------->
+                    <tbody id="tbodyturmas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal-turmas">
+            <form action="" id="formTurmas">
+                <div class="modal-head">
+                    <h2>Cadastrar Turma</h2>
+                </div>
+                <div class="form-inputs">
+                    <div class="inputs">
+                        <label for="nome">Nome da Turma:</label>
+                        <input type="text" id="nome" placeholder="Ex.: Desenvolvimento de Sistemas" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="descricao">Descricão:</label>
+                        <input type="text" id="descricao" placeholder="Ex.: Turma 1 de DS de 2026" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button><i class="fa-regular fa-floppy-disk"></i>Cadastrar</button>
+                        <button type="button" onclick="fecharModal()">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

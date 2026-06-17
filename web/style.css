@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: #010755;
+    color: #fff;
+    font-family: dm sans;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+header a{
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+header a:hover{
+    background: #ffffff51;
+}

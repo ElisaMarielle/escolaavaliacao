@@ -1,12 +1,5 @@
 # Escola avaliacao
 
-Qual editor IDE, VsCode por exemplo
-Qual SGBD e versão, XAMPP - MySQL por exemplo
-Print das telas principais
-Qual servidor de aplicação (Exemplo Node.JS) e versão.
-Quais a linguagem e versão são utilizadas no sistema desenvolvido.
-Tutorial de como testar o aplicativo, tanto back-end quanto front-end
----
 ## Detalhes
 
 1. Editor IDE:

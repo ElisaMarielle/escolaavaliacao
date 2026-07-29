@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola — Aulas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .head .left p{
+            font-weight: 600;
+            color: #9a9a9a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left"><h1>Escola SENAI</h1></div>
+        <div class="right">
+            <a href="index.htm">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="head">
+                <div class="left">
+                    <h2 style="color: #0d17a2;">Aulas</h2>
+                    <p id="nomeTurmaAtual"></p>
+                </div>
+                <div class="right">
+                    <button onclick="abrirModalA()"><i class="fa-solid fa-plus"></i>Nova Aula</button>
+                </div>
+            </div>
+        </div>
+        <div class="table-aulas">
+            <table>
+                <!-----------HEAD------------->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <!-----------BODY------------->
+                <tbody id="tbodyaulas">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-aulas">
+            <form action="" id="formAulas">
+                <div class="modal-head">
+                    <h2>Cadastrar Aula</h2>
+                </div>
+                <div class="form-inputs">
+                    <div class="inputs">
+                        <label for="titulo">Nome da Aula:</label>
+                        <input type="text" id="titulo" placeholder="Ex.: IOT Aula 1" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="conteudo">Descricão:</label>
+                        <input type="text" id="conteudo" placeholder="Ex.: Explicação sobre IOT" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button><i class="fa-regular fa-floppy-disk"></i>Cadastrar</button>
+                        <button type="button" onclick="fecharModalA()">Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

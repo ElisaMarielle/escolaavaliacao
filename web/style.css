@@ -12,6 +12,10 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 header h1{
     font-weight: 500;
@@ -25,4 +29,126 @@ header a{
 }
 header a:hover{
     background: #ffffff51;
+}
+
+main{
+    font-family: dm sans;
+}
+.main-content{
+    width: 80%;
+}
+.table-turmas, .table-aulas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 2rem;
+}
+.main-content .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .right button{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #0d17a2;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-family: dm sans;
+}
+table{
+    width: 80%;
+    border: 2px solid #010755;
+    border-radius: 10px;
+}
+thead{
+    background-color: #f3f3f3;
+}
+
+.modal-turmas, .modal-aulas{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #0107556b;
+    backdrop-filter: blur(5px);
+}
+#formTurmas, #formAulas{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+}
+.modal-head{
+    margin-bottom: 10px;
+    color: #0d17a2;
+}
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-inputs .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.inputs input{
+    border: none; border-radius: 6px;
+    outline: 2px solid #010755;
+    padding: 6px 12px;
+    font-family: dm sans;
+}
+.inputs label{
+    font-weight: 600;
+}
+.form-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+.form-buttons button{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #0d17a2;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-family: dm sans;
+}
+.form-buttons button:hover{
+    background: #212cc8;
+}
+
+.table-button{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #0d17a2;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-family: dm sans;
+}
+.table-button:hover{
+    background: #212cc8;
+}
+.table-buttonE{
+    padding: 6px 12px;
+    border-radius: 8px;
+    background: #b71e1e;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-family: dm sans;
+}
+.table-buttonE:hover{
+    background: #d63535;
 }
